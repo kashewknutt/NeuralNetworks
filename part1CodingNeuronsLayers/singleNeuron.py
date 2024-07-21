@@ -1,3 +1,14 @@
+'''
+This is a basic structure of a neuron.
+
+The neuron has 3 inputs and 3 weights. The bias is 2.
+It calculates output on the sum of product of inputs and weights.
+
+
+'''
+
+
+
 import numpy as np
 
 
@@ -7,7 +18,7 @@ bias = 2
 output = 0
 
 for i in range(len(xi)):
-    output += i * wi[i]
+    output += xi[i] * wi[i]
 output += bias
 print(output)
 

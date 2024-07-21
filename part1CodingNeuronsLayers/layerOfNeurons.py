@@ -1,3 +1,13 @@
+'''
+This is a simple example of a layer of neurons.
+It calculates 3 outputs for 3 neurons from 4 inputs.
+The weights are stored in a list of lists. 
+Numpy dot function is a major part of neural networks.
+
+'''
+
+
+
 import numpy as np
 
 
