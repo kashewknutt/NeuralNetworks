@@ -1,3 +1,6 @@
+import numpy as np
+
+
 inputs = [1, 2, 3, 2.5]
 
 weights = [[0.2, 0.8, -0.5, 1],
@@ -30,4 +33,12 @@ inputs[1]*weights3[1] +
 inputs[2]*weights3[2] +
 inputs[3]*weights3[3] + bias3]
 
+print(outputs)
+
+outputs = biases + np.dot(weights, inputs)
+print(outputs)
+
+listedInputs = [[1,2,3,1.3], [3,5,2,6], [5,3,5.6,2]]
+
+outputs = np.dot(listedInputs, np.array(weights).T) + biases
 print(outputs)
